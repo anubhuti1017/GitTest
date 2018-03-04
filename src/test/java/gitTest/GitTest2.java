@@ -12,13 +12,13 @@ import org.testng.annotations.Test;
 
 
 
-public class GitTest {
+public class GitTest2 {
 
 	@Test
 	public void loginTest() throws IOException{
 		WebDriver wd= new FirefoxDriver();
 		wd.manage().window().maximize();
-		wd.get("https://www.google.com");
+		wd.get("http://www.bing.com");
 		File src=((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("E:\\screenshot\\google.jpeg"));
 	}
